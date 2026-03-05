@@ -73,7 +73,15 @@ int main() {
     Color Default; // Using default constructor to create a Color object with RGB values initialized to 0.
     cout << "Default's RGB values are: " << endl;
     Default.print();
-    Color Red(255); //
+    Color Red(255); // Using partial constructor to initialize red member variable only.
+    cout << "\nRed's RGB values are: " << endl; // Red's RGB values are 255, 0, 0.
+    Red.print();
+    Color Brown(150, 75); // Using partial constructor to initialize red and green member variables.
+    cout << "\nBrown's RGB values are: " << endl; // Brown's RGB values are 150, 75, 0.
+    Brown.print();
+    Color Gray(128, 128, 128); // Using parameter constructor to initialize all RGB values.
+    cout << "\nGray's RGB values are: " << endl; // Gray's RGB values are 128, 128, 128.
+    Gray.print();
  
     return 0;
 }
