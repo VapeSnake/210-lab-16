@@ -1,6 +1,6 @@
 // COMSC-210 | Lab 16 | Noel Mier-Luna
 
-
+// Using Lab 14's code, we will add a default, parameter, and partial constructor.
 
 #include <iostream>
 #include <iomanip>
@@ -15,6 +15,11 @@ class Color {
     int blue;
 
     public:
+    // Constructors
+    Color() {red = 0, green = 0, blue = 0;} // Default constructor initializes RGB values to 0.
+    Color(int r) {red = r, green = 0, blue = 0;} // Partial constructor for initializing red member variable only.
+    Color(int r, int g) {red = r, green = g, blue = 0;} // Partial constructor for initializing red and green member variables.
+
         int getRed() const {
             return red;
         }
