@@ -19,8 +19,9 @@ class Color {
     Color() {red = 0, green = 0, blue = 0;} // Default constructor initializes RGB values to 0.
     Color(int r) {red = r, green = 0, blue = 0;} // Partial constructor for initializing red member variable only.
     Color(int r, int g) {red = r, green = g, blue = 0;} // Partial constructor for initializing red and green member variables.
+    Color(int r, int g, int b) {red = r, green = g, blue = b;} // Parameter constructor for initializing all RGB values.
 
-        int getRed() const {
+    int getRed() const {
             return red;
         }
     void setRed(int r) {
@@ -47,6 +48,7 @@ class Color {
 };
 
 int main() {
+    /*
     Color Yellow; // RGB values are 255, 224, 32.
     Yellow.setRed(255);
     Yellow.setGreen(224); // Setting RGB values for Yellow color using setter functions.
@@ -66,7 +68,12 @@ int main() {
     MintTeal.setGreen(205);
     MintTeal.setBlue(170);
     cout << "Mint-teal's RGB values are: " << endl;
-    MintTeal.print();
+    MintTeal.print();*/
 
+    Color Default; // Using default constructor to create a Color object with RGB values initialized to 0.
+    cout << "Default's RGB values are: " << endl;
+    Default.print();
+    Color Red(255); //
+ 
     return 0;
 }
